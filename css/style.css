@@ -6,27 +6,31 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    margin: 0;
 }
 
-body {    
+body {
     min-height: 100vh;
     padding: 1.4em;
     display: grid;
     grid-template-columns: minmax(auto, max-content);
     gap: 1.4em;
     align-content: center;
-    justify-content: center;    
+    justify-content: center;
     font-family: bookmania, serif;
     font-size: 2rem;
-    font-size: clamp(1.25rem, 0.6875rem + 2.5000vw, 2rem); /* repsonsive typo */
+    font-size: clamp(1.25rem, 0.6875rem + 2.5000vw, 2rem);
+    /* repsonsive typo */
     font-weight: 300;
     font-feature-settings: "liga", "dlig", "ss04", "ss08", "ss10";
     line-height: 1.4;
-    background-color: oldlace;    
+    background-color: oldlace;
 }
 
 h1 {
-    font-style: italic;    
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
     text-transform: capitalize;
 }
 
@@ -92,4 +96,4 @@ h1 {
 
 footer {
     font-feature-settings: "smcp", "c2sc";
-} 
+}
